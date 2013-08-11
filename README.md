@@ -36,7 +36,7 @@ The most basic skeleton should look something like this:
     });
 
 When you instantiate a new chimera with `new Chimera()`, you're actually creating a new browser instance which does
-not share session data with other browser sessions.  It has it's own in memory cookie database and url history.  
+not share session data with other browser sessions.  It has its own in memory cookie database and url history.  
 
 The `locals` hash should contain variables you wish to pass to the web page.  These values should be types that can be
 turned into json because the sandboxing environment of the browser's js engine prevents us from passing actual nodejs
@@ -183,7 +183,7 @@ You'll need the ssl headers, freetype, and fontconfig libraries first, so you'll
 
     apt-get install libfreetype6-dev libfontconfig1-dev libssl-dev
 
-Since nodejs comes with it's own version of ssl, we have to make Qt also use this version of ssl or else we'll have segfaults.
+Since nodejs comes with its own version of ssl, we have to make Qt also use this version of ssl or else we'll have segfaults.
 Compile the openssl included first (we have some additional flags like `-fPIC` which allow the libraries to be statically included
 later on).  Here are all the steps required to build chimera:
 
